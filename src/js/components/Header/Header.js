@@ -1,8 +1,7 @@
 import React from "react";
 
-import Header from "./Header";
+export default class Header extends React.Component {
 
-export default class Layout extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -13,12 +12,11 @@ export default class Layout extends React.Component {
     render() {
         return (
             <div>
-                <Header />
+                <span>Hello Hello how are you all?</span>
 
             </div>
         )
     }
-
 
 
 }
