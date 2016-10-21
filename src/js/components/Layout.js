@@ -1,6 +1,7 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
-import Header from "./Header";
+import Nav_Header from "./Nav_Header/Nav_Header";
 
 export default class Layout extends React.Component {
     constructor() {
@@ -13,12 +14,13 @@ export default class Layout extends React.Component {
     render() {
         return (
             <div>
-                <Header />
-
+                <Nav_Header />
             </div>
         )
     }
 
-
-
 }
+
+const app = document.getElementById('app');
+
+ReactDOM.render(<Layout/>, app);
