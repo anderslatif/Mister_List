@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { Link } from "react-router";
 
 import Nav_Header from "./Nav_Header/Nav_Header";
 
@@ -14,13 +14,13 @@ export default class Layout extends React.Component {
     render() {
         return (
             <div>
-                <Nav_Header />
+                {<Nav_Header />}
+                <span>Hellos</span>
+                <Link to="music">music</Link>
+
+
             </div>
         )
     }
 
 }
-
-const app = document.getElementById('app');
-
-ReactDOM.render(<Layout/>, app);

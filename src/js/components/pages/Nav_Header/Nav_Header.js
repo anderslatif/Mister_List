@@ -1,5 +1,6 @@
 import React from "react";
 import { IndexLink, Link } from "react-router";
+require('../../../../styles/_main.scss');
 
 export default class Nav_Header extends React.Component {
     constructor() {
@@ -35,15 +36,17 @@ export default class Nav_Header extends React.Component {
                     </div>
                     <div className={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav">
+                            <li>Mister List</li>
                             <li activeClassName="active" onlyActiveOnIndex={true}>
-                                <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Featured</IndexLink>
+                                <IndexLink to="movies" onClick={this.toggleCollapse.bind(this)}>Movies</IndexLink>
                             </li>
                             <li activeClassName="active">
-                                <Link to="archives" onClick={this.toggleCollapse.bind(this)}>Archives</Link>
+                                <Link to="music" onClick={this.toggleCollapse.bind(this)}>Music</Link>
                             </li>
                             <li activeClassName="active">
-                                <Link to="settings" onClick={this.toggleCollapse.bind(this)}>Settings</Link>
+                                <Link to="literature" onClick={this.toggleCollapse.bind(this)}>Litterature</Link>
                             </li>
+
                         </ul>
                     </div>
                 </div>

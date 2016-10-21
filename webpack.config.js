@@ -7,17 +7,23 @@ module.exports = {
     devtool: debug ? "inline-sourcemap" : null,
     entry: "./js/client.js",
     module: {
-        loaders: [
-            {
-                test: /\.jsx?$/,
-                exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['react', 'es2015', 'stage-0'],
-                    plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
-                }
-            }
-        ]
+        loaders: [{
+            test: /\.js[x]?$/,
+            loaders: ['babel-loader?presets[]=es2015&presets[]=react'],
+            exclude: /(node_modules|bower_components)/
+        }, {
+            test: /\.css$/,
+            loaders: ['style', 'css']
+        }, {
+            test: /\.scss$/,
+            loaders: ['style', 'css', 'postcss', 'sass']
+        }, {
+            test: /\.less$/,
+            loaders: ['style', 'css', 'less']
+        }, {
+            test: /\.(eot|ttf|svg|gif|png)$/,
+            loader: "file-loader"
+        }]
     },
     output: {
         path: __dirname + "/src/",
