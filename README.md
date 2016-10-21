@@ -12,5 +12,5 @@ It uses the following APIs:
 
 * Movie API
 
-* Litterature API
+* Literature API
 
