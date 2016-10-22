@@ -1,12 +1,31 @@
-
-
-
-
-
-
-/*
-.navbar {
-  position: relative;
-  color: black;
+.app_body {
+  outline: none; // both of these remove dotted lines on clicked elements
+  outline: 0;
 }
-*/
+
+
+
+// the navbar header
+.navbar {
+  position: relative; // or else the rest of the page hides under the navigation bar
+  color: black;
+
+  .container{
+    width: 100%;
+  }
+
+  .site_logo {
+    float: left;
+    margin-right: 15%;
+  }
+
+  // these are the menu items
+  .nav li a{
+    padding-left: 100px;
+    padding-right: 100px;
+
+    // remove these two soon and make them general
+    outline: none; // both of these remove dotted lines on clicked elements
+    outline: 0;
+  }
+}

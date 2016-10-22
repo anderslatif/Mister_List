@@ -1,6 +1,7 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
 var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     context: path.join(__dirname, "src"),
@@ -13,10 +14,10 @@ module.exports = {
             exclude: /(node_modules|bower_components)/
         }, {
             test: /\.css$/,
-            loaders: ['style', 'css']
+            loader: "style-loader!css-loader"
         }, {
             test: /\.scss$/,
-            loaders: ['style', 'css', 'postcss', 'sass']
+            loader: 'style!css!sass'
         }, {
             test: /\.less$/,
             loaders: ['style', 'css', 'less']
@@ -30,8 +31,9 @@ module.exports = {
         filename: "client.min.js"
     },
     plugins: debug ? [] : [
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+        new webpack.HotModuleReplacementPlugin(),
+        new ExtractTextPlugin('main.css', {
+            allChunks: true
+        })
     ],
 };
