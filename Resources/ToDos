@@ -1,0 +1,6 @@
+
+
+
+
+* Make the application usable for everyone but if someone logs in then they will receive the same service
+with a console that saves their stats in a database

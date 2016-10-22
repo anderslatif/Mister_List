@@ -14,7 +14,7 @@ const app = document.getElementById('app');
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Layout}>
-            <IndexRoute path="home" component={Home}/>
+            <IndexRoute component={Home}/>
             <Route path="movies" component={Movies}/>
             <Route path="music" component={Music}/>
             <Route path="literature" component={Literature}/>
