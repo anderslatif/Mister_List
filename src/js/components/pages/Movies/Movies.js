@@ -11,6 +11,7 @@ export default class Movies extends React.Component {
     }
 
     render() {
+
         return (
             <div>
                 <Sub_Nav />

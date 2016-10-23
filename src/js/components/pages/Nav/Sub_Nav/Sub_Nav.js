@@ -9,30 +9,30 @@ export default class Sub_Nav extends React.Component {
         };
     }
 
-    toggleCollapse() {
-        const collapsed = !this.state.collapsed;
-        this.setState({collapsed});
-    }
+
 
     render() {
         const { location } = this.props;
-        const { collapsed } = this.state;
-        const navClass = collapsed ? "collapse" : "";
 
 
+        const subMenuHtml =
+                <div className="container">
 
-        const subMenuHtml = <div>
-        <li activeClassName="active" onlyActiveOnIndex={true}>
-            <Link to="movies" onClick={this.toggleCollapse.bind(this)}>List</Link>
-        </li>
-        <li activeClassName="active">
-            <Link to="music" onClick={this.toggleCollapse.bind(this)}>Add</Link>
-        </li>
-        <li activeClassName="active">
-            <Link to="literature" onClick={this.toggleCollapse.bind(this)}>Get</Link>
-        </li>
-            </div>;
 
+                <div className={"navbar-collapse"} id="bs-example-navbar-collapse-1">
+                    <ul className="nav navbar-nav">
+                        <li activeClassName="active" onlyActiveOnIndex={true}>
+                            <Link to="movies_list">List</Link>
+                        </li>
+                        <li activeClassName="active">
+                            <Link to="movies_add">Add</Link>
+                        </li>
+                        <li activeClassName="active">
+                            <Link to="movies_get">Get</Link>
+                        </li>
+                    </ul>
+                    </div>
+                </div>;
 
 
 
@@ -42,4 +42,9 @@ export default class Sub_Nav extends React.Component {
             </nav>
         );
     }
+
+
+
+
+
 }
