@@ -47,7 +47,7 @@ export default class Nav extends React.Component {
                                 <Link to="music_list" onClick={this.toggleCollapse.bind(this)}>Music</Link>
                             </li>
                             <li activeClassName="active">
-                                <Link to="literature_list" onClick={this.toggleCollapse.bind(this)}>Litterature</Link>
+                                <Link to="literature" onClick={this.toggleCollapse.bind(this)}>Litterature</Link>
                             </li>
                             { this.props.children }
                         </ul>

@@ -2,7 +2,7 @@ import React from "react";
 
 import Sub_Nav from "../Nav/Sub_Nav/Sub_Nav";
 
-export default class Movies extends React.Component {
+export default class Movies_Add extends React.Component {
     constructor() {
         super();
         this.state = {
