@@ -26,6 +26,7 @@ export default class Nav extends React.Component {
         return (
             <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <img className="site_logo" src="https://wiki.jenkins-ci.org/download/attachments/327683/JENKINS?version=1&modificationDate=1302750804000"></img>
+                <img className="site_logo_text" src="http://i.imgur.com/AKFvubG.png"></img>
                 <div className="container">
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" onClick={this.toggleCollapse.bind(this)} >
@@ -47,7 +48,7 @@ export default class Nav extends React.Component {
                                 <Link to="music_list" onClick={this.toggleCollapse.bind(this)}>Music</Link>
                             </li>
                             <li activeClassName="active">
-                                <Link to="literature" onClick={this.toggleCollapse.bind(this)}>Litterature</Link>
+                                <Link to="literature_list" onClick={this.toggleCollapse.bind(this)}>Litterature</Link>
                             </li>
                             { this.props.children }
                         </ul>
