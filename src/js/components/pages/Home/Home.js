@@ -1,5 +1,8 @@
 import React from "react";
 
+import About from "../Home/About";
+
+
 export default class Home extends React.Component {
     constructor() {
         super();
@@ -11,7 +14,8 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <span>Hello hello.. I am in Home.js</span>
+                <About className="col-md-6"/>
+                <span className="col-md-6">I will put my sign in form here with registration abilities</span>
             </div>
         )
     }
