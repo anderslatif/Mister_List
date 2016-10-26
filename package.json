@@ -30,7 +30,9 @@
     "style-loader": "*",
     "url-loader": "*",
     "resolve-url": "*",
-    "extract-text-webpack-plugin": "*"
+    "extract-text-webpack-plugin": "*",
+    "react-bootstrap": "*",
+    "react-router-bootstrap": "*"
   },
   "devDependencies": {
     "node-sass": "^3.10.1"

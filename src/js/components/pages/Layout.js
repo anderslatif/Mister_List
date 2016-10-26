@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-import Nav from "./Nav/Nav";
+import NavHeader from "./Nav/NavHeader";
 
 export default class Layout extends React.Component {
     constructor() {
@@ -16,7 +16,7 @@ export default class Layout extends React.Component {
 
         return (
             <div>
-                {<Nav />}
+                {<NavHeader />}
                 {this.props.children}
             </div>
         )

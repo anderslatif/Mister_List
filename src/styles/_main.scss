@@ -11,25 +11,27 @@
   color: black;
   margin-bottom: 0;
 
+  .container {
+    float: left;
+  }
 
-  .container{
-    width: 100%;
+  .navbar-brand {
+    padding: 0 0 0 0;
   }
 
   .site_logo {
     float: left;
+    height: 50px;
   }
 
   .site_logo_text {
-    padding-top: 10px;
-    width: 10%;
+    padding-top: 15px;
+    width: 20%;
     float: left;
   }
 
   // these are the menu items
   .nav li a{
-    padding-left: 100px;
-    padding-right: 100px;
 
     // remove these two soon and make them general
     outline: none; // both of these remove dotted lines on clicked elements

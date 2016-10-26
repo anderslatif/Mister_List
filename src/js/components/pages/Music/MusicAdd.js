@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Music extends React.Component {
+export default class MusicAdd extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -11,7 +11,7 @@ export default class Music extends React.Component {
     render() {
         return (
             <div>
-                <span>Hello hello.. I am in Music.js</span>
+                <span>Hello hello.. I am in MusicAdd.js</span>
             </div>
         )
     }
