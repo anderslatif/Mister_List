@@ -32,7 +32,9 @@
     "resolve-url": "*",
     "extract-text-webpack-plugin": "*",
     "react-bootstrap": "*",
-    "react-router-bootstrap": "*"
+    "react-router-bootstrap": "*",
+    "toastr": "*",
+    "react-bootstrap-table": "*"
   },
   "devDependencies": {
     "node-sass": "^3.10.1"

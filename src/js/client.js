@@ -26,7 +26,7 @@ const app = document.getElementById('app');
 // https://stormpath.com/blog/build-a-react-app-with-user-authentication
 
 ReactDOM.render(
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
         <Route path="/" component={Layout}>
             <IndexRoute component={Home}/>
 
