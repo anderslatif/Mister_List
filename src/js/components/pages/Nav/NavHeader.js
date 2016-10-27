@@ -39,6 +39,21 @@ export default class NavHeader extends React.Component {
                             <NavItem>Home</NavItem>
                         </LinkContainer>
 
+                        <LinkContainer to="/movies_list">
+                            <NavItem>Movies</NavItem>
+                        </LinkContainer>
+
+                        <LinkContainer to="/music_list">
+                            <NavItem>Music</NavItem>
+                        </LinkContainer>
+
+                        <LinkContainer to="/literature_list">
+                            <NavItem>Literature</NavItem>
+                        </LinkContainer>
+
+
+
+{/*
                         <NavDropdown eventKey={2} title="Movies" id="basic-nav-dropdown">
                             <LinkContainer to="movies_list">
                                 <MenuItem eventKey={2.1}>List</MenuItem>
@@ -74,6 +89,7 @@ export default class NavHeader extends React.Component {
                                 <MenuItem eventKey={4.3}>Get</MenuItem>
                             </LinkContainer>
                         </NavDropdown>
+*/}
 
                         {signOutMenuItem}
 
